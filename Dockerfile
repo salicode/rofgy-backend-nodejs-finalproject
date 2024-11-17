@@ -12,8 +12,10 @@ RUN npm install
 # Copy necessary files
 COPY . .
 
-# Expose port 3000 (adjust the port based on your application)
 EXPOSE 3000
 
 # CMD to run the application
 CMD [ "node", "app.js" ]
+
+# docker build -t salisu/customer-advance-system:tagname .
+# docker push salisu/customer-advance-system:tagname
